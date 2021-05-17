@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chu" />
+        <put-attribute name="content" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="employee" extends="baseLayout">
+        <put-attribute name="title" value="Employee" />
+        <put-attribute name="content" value="/WEB-INF/jsp/employee.jsp" />
+    </definition>
+    <definition name="addemp" extends="baseLayout">
+        <put-attribute name="title" value="Add Employee" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addemp.jsp" />
+    </definition>  
+    <definition name="updateEmp" extends="baseLayout">
+        <put-attribute name="title" value="Add Employee" />
+        <put-attribute name="content" value="/WEB-INF/jsp/updateEmp.jsp" />
+    </definition> 
+    <definition name="searchEmp" extends="baseLayout">
+        <put-attribute name="title" value="Search Employee" />
+        <put-attribute name="content" value="/WEB-INF/jsp/searchEmp.jsp" />
+    </definition>
+    <definition name="services" extends="baseLayout">
+        <put-attribute name="title" value="Services" />
+        <put-attribute name="content" value="/WEB-INF/jsp/services.jsp" />
+    </definition>
+    <definition name="addService" extends="baseLayout">
+        <put-attribute name="title" value="Add Servcie" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addService.jsp" />
+    </definition>
+    <definition name="statsRe" extends="baseLayout">
+        <put-attribute name="title" value="doanh-thu" />
+        <put-attribute name="content" value="/WEB-INF/jsp/statsRe.jsp" />
+    </definition>
+    <definition name="statsDen" extends="baseLayout">
+        <put-attribute name="title" value="mat-do-tiec-cuoi" />
+        <put-attribute name="content" value="/WEB-INF/jsp/statsDen.jsp" />
+    </definition>
+    <definition name="feedback" extends="baseLayout">
+        <put-attribute name="title" value="Feedback" />
+        <put-attribute name="content" value="/WEB-INF/jsp/feedback.jsp" />
+    </definition>
+    <definition name="addFeedback" extends="baseLayout">
+        <put-attribute name="title" value=" Add Feedback" />
+        <put-attribute name="content" value="/WEB-INF/jsp/addFeedback.jsp" />
+    </definition>
+    <definition name="bookParty" extends="baseLayout">
+        <put-attribute name="title" value="Book Party" />
+        <put-attribute name="content" value="/WEB-INF/jsp/bookParty.jsp" />
+    </definition>
+    <definition name="viewBook" extends="baseLayout">
+        <put-attribute name="title" value="Don Dat Tiec" />
+        <put-attribute name="content" value="/WEB-INF/jsp/viewBook.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Register" />
+        <put-attribute name="content" value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="cusEvent" extends="baseLayout">
+        <put-attribute name="title" value="Event-Customer" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cusEvent.jsp" />
+    </definition>
+    <definition name="hall" extends="baseLayout">
+        <put-attribute name="title" value="Sanh" />
+        <put-attribute name="content" value="/WEB-INF/jsp/hall.jsp" />
+    </definition>
+    <definition name="cusService" extends="baseLayout">
+        <put-attribute name="title" value="Dich vu" />
+        <put-attribute name="content" value="/WEB-INF/jsp/cusService.jsp" />
+    </definition>
+    <definition name="customerInfo" extends="baseLayout">
+        <put-attribute name="title" value="Ttkh" />
+        <put-attribute name="content" value="/WEB-INF/jsp/customerInfo.jsp" />
+    </definition>
+     <definition name="billParty" extends="baseLayout">
+        <put-attribute name="title" value="Thanh Toan" />
+        <put-attribute name="content" value="/WEB-INF/jsp/billParty.jsp" />
+    </definition>
+</tiles-definitions>
